@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: auto;
+}
+
+.container-bg{
+    /* background-color: #3e64ff; */
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: rgba(62, 100, 255,0.3);
+    z-index: -5;
+}
+
+.container-top{
+    width: 100%;
+    height: 100vh;
+    cursor: context-menu;
+}
+
+.nav-top{
+    width: 100%;
+    height: 8%;
+}
+
+.nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-left{
+    width: 20%;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.nav-left span a{
+    text-decoration: none;
+    color: rgb(62, 100, 255);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nav-right{
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.nav-items{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.nav-items a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items a:hover{
+    text-decoration: underline;
+}
+
+.nav-right span{
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.text{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text h3{
+    color: rgb(62, 100, 255);
+    font-size: 3vw;
+}
+
+.text h1{
+    font-size: 7vw;
+}
+
+.text span{
+    font-size: 5vw;
+    color: rgb(62, 100, 255);
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: context-menu;
+}
+
+.about-pic,.about-text{
+    width: 40%;
+    height: 100%;
+}
+
+#img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.about-text h1{
+    font-size: 7vw;
+}
+.about-text p{
+    font-size: 2vw;
+    opacity: 0.5;
+}
+
+.text1 span{
+    padding: 0.5rem;
+}
+
+.about-text .head{
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.about-text .head-text{
+    font-size: 1.5vw;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.about-text button{
+    width: 30vw;
+    padding: 1vw;
+    font-size: 2vw;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(62, 100, 255);
+}
+
+.about-text button a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: context-menu;
+}
+
+.logo-pic{
+    width: 20%;
+    height: 50%;
+}
+
+.logo-img{
+    width: 100%;
+    height: 100%;
+}
+
+.resume{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vh;
+    background-color: rgba(62, 100, 255,0.3);
+    box-shadow: 0 0 30px rgba(62, 100, 255,0.7);
+    padding: 4vh 4vw;
+    cursor: context-menu;
+}
+
+.resume-list{
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vh;
+    padding: 2vh;
+}
+
+.resume-list a{
+    text-decoration: none;
+    color: rgb(62, 100, 255);
+    font-size: 2vw;
+}
+
+.resume span{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vh;
+    text-align: left;
+    padding: 2vw;
+}
+
+.resume span:hover{
+    box-shadow: 0 0 10px rgb(62, 100, 255);
+}
+
+.academic{
+    width: 45%;
+    height: auto;
+}
+
+.academic h1{
+    font-size: 3vw;
+}
+
+.details{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+    cursor: context-menu;
+}
+
+.details-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.details-list h1{
+    font-size: 2vw;
+}
+
+.details-list h2{
+    font-size: 1.7vw;
+}
+
+.details-list p{
+    font-size: 1.4vw;
+}
+
+.technical{
+    width: 100%;
+    height: auto;
+}
+
+.experience{
+    width: 100%;
+    height: auto;
+}
+
+.courses{
+    width: 100%;
+    height: auto;
+}
+
+.skills{
+    width: 100%;
+    height: auto;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    cursor: context-menu;
+}
+
+.projects h1{
+    font-size: 8vw;
+}
+
+.projects p{
+    font-size: 3vw;
+    opacity: 0.7;
+}
+
+.projects-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 1.5rem;
+}
+
+.project-details-list{
+    box-shadow: 0 0 1rem gray;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: rgba(62, 100, 255,0.3);
+    cursor: context-menu;
+    filter: blur(5px);
+    /* filter: hue-rotate(20deg); */
+}
+
+.project-details-list:hover{
+    filter: blur(0);
+}
+
+.project-details-list h1{
+    color: rgb(62, 100, 255);
+    font-size: 3vw;
+}
+
+.project-details-list h2{
+    font-size: 2.5vw;
+}
+
+.project-details-list p{
+    font-size: 2vw;
+    opacity: 0.7;
+}
+
+.project-details-list a{
+    width: 100%;
+    font-size: 1.4vw;
+    text-decoration: none;
+}
+
+.text-area{
+    width: 100%;
+    padding: 2rem 4rem;
+}
+
+.text-area span{
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.textarea{
+    width: 100%;
+    padding: 4rem;
+    font-weight: bolder;
+}
+
+.text-area1 button{
+    border: 1px solid black;
+    background-color: rgb(62, 100, 255);
+    color: white;
+    float: right;
+    width: 13vw;
+}
+
+.contact{
+    margin: 4vh 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgba(62, 100, 255,0.3);
+    padding: 0 2rem;
+    cursor: context-menu;
+}
+
+.mob, .email, .git-hub, .telegram{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7vw;
+}
+
+.copywrite{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: context-menu;
+}
+
+hr{
+    width: 100vw;
+    height: 2vh !important;
+    border: none;
+    background-color: gray;
+}
+
