@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/pic.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-left{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(62, 100, 255);
+    background-image: url(./images/pic1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: whitesmoke;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+form{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    background-color: rgb(125, 148, 240);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+form .inp{
+    width: 60%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+
+form .inp label{
+    position: absolute;
+    font-size: 1.3vw;
+    font-weight: bold;
+    padding-left: 2vw;
+    transition: all 200ms linear;
+    pointer-events: none;
+    /* color: rgb(62, 100, 255); */
+    color: black;
+}
+
+form .inp .eye{
+    position: absolute;
+    left: 84vw;
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+
+form .inp .eye span{
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+form .inp input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 0 2vw;
+}
+
+input:focus{
+    font-weight: bold;
+}
+
+.label3{
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.input1:focus ~ .label1, .input2:focus ~ .label2{
+    transform: translateY(-2.3rem);
+    opacity: 1;
+    font-weight: bold;
+    color: black;
+}
+
+.form-check{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.link{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.link a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.link a:hover{
+    text-decoration: none;
+    color: rgb(138, 125, 125);
+}
+
+.login{
+    width: 60%;
+    padding: 1vw;
+    border-radius: 10px;
+    border: 2px solid rgb(62, 100, 255);
+    color: rgb(62, 100, 255);
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
